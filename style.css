@@ -21,6 +21,29 @@ p{
     font-size: 15px;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+button {
+    width: fit-content;
+    all: unset;
+    font-size: 0.8rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--Soft-red);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    align-self: self-start;
+    transition: ease-in-out 0.2s;
+}
+
+button:hover {
+    color: var(--Off-white);
+    background-color: var(--Very-dark-blue);
+}
+
 body {
     width: 100%;
     display: grid;
@@ -76,10 +99,14 @@ nav a:hover{
 
 .card4 {
     width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
 }
 
-.card5 {
-    width: 20rem;
+aside {
+    width: 18rem;
     background-color: var(--Very-dark-blue);
 }
 
