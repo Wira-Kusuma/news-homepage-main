@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+p{
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "card1 card1 card1"
+    "card2 card2 card5"
+    "card3 card4 card5"
+    "card6 card7 card8";
+    gap: 2rem;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--Very-dark-blue);
+    transition: ease-in-out 0.2s;
+}
+nav a:hover{
+    color: var(--Soft-red);
+}
+
+/* card2 */
+
+.card2 img{
+    width: 35rem;
+}
+
+.card3 {
+    width: 15rem;
+    font-weight: 700;
+}
+
+.card4 {
+    width: 15rem;
+}
+
+.card5 {
+    width: 20rem;
+    background-color: var(--Very-dark-blue);
+}
+
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+.card4{grid-area: card4;}
+.card5{grid-area: card5;}
+.card6{grid-area: card6;}
+.card7{grid-area: card7;}
+.card8{grid-area: card8;}
