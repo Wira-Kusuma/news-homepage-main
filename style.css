@@ -48,10 +48,11 @@ body {
     width: 100%;
     display: grid;
     place-items: center;
-    padding: 2rem;
+    padding: 1rem 0;
 }
 
 main{
+    width: auto;
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(4,auto);
@@ -60,7 +61,7 @@ main{
     "card2 card2 card5"
     "card3 card4 card5"
     "card6 card7 card8";
-    gap: 2rem;
+    gap: 1rem;
 }
 
 /* header */
@@ -89,7 +90,7 @@ nav a:hover{
 /* card2 */
 
 .card2 img{
-    width: 35rem;
+    width: 41rem;
 }
 
 .card3 {
@@ -101,13 +102,89 @@ nav a:hover{
     width: 15rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1.5rem;
     align-items: left;
 }
 
+.card4 p{
+    color: var(--Dark-grayish-blue);
+}
+
 aside {
-    width: 18rem;
+    width: 20rem;
     background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+aside h2 {
+    color: var(--Soft-orange);
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0.3rem 0;
+    gap: 0.5rem;
+}
+
+.news:nth-child(odd) {
+    border-top: 1px solid var(--Grayish-blue);
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.news h3 {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.news h3:hover {
+    color: var(--Soft-orange);
+}
+
+.news p {
+    color: var(--Dark-grayish-blue);
+    font-size: 0.8rem;
+}
+
+.card6,.card7,.card8 {
+    width: 20rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.card6 img,.card7 img,.card8 img {
+    width: 7rem;
+    height: 8rem;
+}
+
+.no {
+    color: var(--Soft-orange);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.desc h3 {
+    font-weight: 700;
+}
+
+.desc p {
+    font-size: 0.8rem;
+    color: var(--Dark-grayish-blue);
 }
 
 .card1{grid-area: card1;}
